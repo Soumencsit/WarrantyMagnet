@@ -23,8 +23,7 @@ This web application allows customers to efficiently manage and track product wa
 ![image](https://github.com/user-attachments/assets/725c075a-6b48-4ac7-bfb0-4f8280b70219)
 
 
-You can check out the live version of the application here: [Live Demo]([[https://your-live-link.com](https://warm-llama-dbb071.netlify.app)]([https://dapper-empanada-516e40.netlify.app/](https://warm-llama-dbb071.netlify.app)))
-
+You can check out the live version of the application here: [https://warm-llama-dbb071.netlify.app]
 ## Setup and Installation
 
 ### Prerequisites
