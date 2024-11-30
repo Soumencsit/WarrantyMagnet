@@ -1,0 +1,104 @@
+.about-container {
+    height: 80vh;
+    width: 90vw; /* equivalent to w-screen */
+    color: #FEE715;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px; /* Add padding for smaller screens */
+}
+
+.about-heading {
+    width: 100%; /* equivalent to w-screen */
+    font-family: serif;
+    font-size: 2rem; /* equivalent to text-3xl */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading p {
+    margin: 0.5rem 0;
+}
+
+/* Make sure the stats are spaced correctly on smaller screens */
+.about-stats {
+    width: 100%; /* equivalent to w-screen */
+    padding: 1.25rem; /* equivalent to p-5 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stat-value {
+    font-family: serif;
+    font-size: 2.25rem; /* equivalent to text-4xl */
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+
+/* For small screens (less than 600px width), adjust font sizes and layout */
+@media (max-width: 600px) {
+    .about-container {
+        width: 100vw; /* Take full width on small screens */
+        height: auto; /* Let the height adjust according to content */
+        padding: 10px; /* Less padding for small screens */
+    }
+
+    .about-heading {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .about-stats {
+        padding: 0.5rem; /* Less padding for smaller screens */
+        flex-direction: column; /* Stack the stats vertically */
+        align-items: center;
+    }
+
+    .stat {
+        width: 100%; /* Make stat elements take full width */
+        margin-bottom: 10px; /* Less space between stats */
+    }
+
+    .stat-value {
+        font-size: 1.75rem; /* Slightly smaller font size */
+    }
+}
+
+/* For medium screens (between 600px and 900px), adjust the layout */
+@media (max-width: 900px) {
+    .about-container {
+        width: 90vw;
+        padding: 15px; /* Adjust padding */
+    }
+
+    .about-heading {
+        font-size: 1.75rem; /* Slightly smaller font size */
+    }
+
+    .stat-value {
+        font-size: 2rem; /* Adjust font size for stats */
+    }
+}
+
+/* For larger screens (greater than 900px), keep the original layout */
+@media (min-width: 900px) {
+    .about-heading {
+        font-size: 2rem; /* Larger font size for bigger screens */
+    }
+
+    .stat-value {
+        font-size: 2.25rem; /* Larger font size for larger screens */
+    }
+}

@@ -1,0 +1,75 @@
+.footer {
+   margin-top: 1rem;
+    background-color: #101820; /* Background color */
+    color: #FEE715; /* Text color */
+    padding: 2rem 1rem; /* Padding for spacing */
+    text-align: center; 
+    font-family: serif; 
+    border-top: 3px solid #FEE715;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; 
+    padding: 0.5rem 0 2rem 0;
+    margin-bottom: 2rem; 
+    gap: 2rem;
+  }
+  
+  .social-icon {
+    color: #FEE715;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #101820; /* Dark color for hover */
+    background-color: #FEE715; /* Highlight color */
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem; /* Text size */
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+  }
+  
+  .footer-link {
+    color: #FEE715;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  @media (max-width: 900px) {
+    .footer{
+      margin-top: 2rem;
+    } 
+    .social-icons{
+      margin-top: 0.5rem; 
+      padding: 0.5rem 0 2rem 0;
+      margin-bottom: 0.5rem; 
+      gap: 2rem;
+    }
+
+  }
+
+  
+  /* Optional: Add Font Awesome icons for social media */
+
+  

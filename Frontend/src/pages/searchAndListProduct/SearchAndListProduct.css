@@ -1,0 +1,59 @@
+.SearchAndListProduct-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0rem; /* Add padding for better spacing */
+}
+
+.SearchAndListProduct-container-top {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center; /* Center buttons when they wrap */
+}
+
+.SearchAndListProduct-container-top button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 0 0 5px 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button.active {
+  background-color: #FEE715; /* Active button background color */
+  color: #101820; /* Active button text color */
+}
+
+/* Media Query for Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .SearchAndListProduct-container {
+    padding: 0rem; /* Reduce padding on smaller screens */
+  }
+
+  .SearchAndListProduct-container-top button {
+    font-size: 16px; /* Reduce button font size */
+    padding: 8px 20px; /* Adjust button padding */
+  }
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .SearchAndListProduct-container-top {
+  
+    gap: 5px; /* Reduce gap between buttons */
+  }
+
+  .SearchAndListProduct-container-top button {
+    width: 100%; /* Make buttons take full width */
+    font-size: 14px; /* Further reduce font size */
+    padding: 10px; /* Adjust padding */
+  }
+}

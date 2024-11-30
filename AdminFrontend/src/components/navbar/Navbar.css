@@ -1,0 +1,185 @@
+
+.navbar {
+    background-color: #101820; /* Dark background */
+    padding: 10px 20px; /* Spacing around the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgba(254, 231, 21, 0.5);
+    border-radius: 1rem;
+    position: relative;
+  }
+  
+  /* Navbar left (logo) */
+  .navbar-left {
+    height: 3rem;
+    width: 4rem;
+  }
+  
+  .navbar-left img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Navbar menu list */
+  .navbar-menu {
+    list-style: none; /* Remove default list bullets */
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual navbar item */
+  .navbar-item {
+    margin: 0 15px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #FEE715;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  /* Hover effect */
+  .navbar-item:hover {
+    color: #e0a800;
+  }
+  
+  .navbar-item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FEE715;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-menu .myproduct{
+    margin: 0 15px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #FEE715;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+  }
+  .navbar-menu .myproduct:hover{
+    color: #e0a800;
+  }
+  
+  
+  /* Expand underline on hover */
+  .navbar-item:hover::after {
+    width: 100%;
+  }
+  .navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .navbar-right li{
+    text-decoration: none;
+  }
+  
+  /* Button styles */
+  .navbar-right button {
+    padding: 10px 30px;
+    background-color: #FEE715;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  .navbar-right button:hover {
+    background-color: #ffcc00;
+  }
+  
+  /* Active button color */
+  .active-button {
+    background-color: #101820 !important;
+  }
+  
+  /* Remove underline for NavLink by default */
+  .navbar-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Make sure active NavLink has the same yellow color */
+  .navbar-item .active {
+    color: #FEE715;
+  }
+  
+  
+  /* Media query for mobile and tablet views */
+  @media (max-width: 768px) {
+    /* Hide navbar items */
+    .navbar-menu .navbar-item {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #101820; /* Matching background */
+      position: absolute;
+      top: 60px; /* Below the logo */
+      left: 0;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+   .navbar-item p{
+    display: flex;
+   }
+  
+    .navbar-item {
+      margin: 10px 0;
+      text-align: center;
+      font-size: 16px;
+    }
+  
+    /* Show the hamburger icon */
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+      z-index: 10;
+    }
+  
+    /* Style the hamburger icon */
+    .navbar-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: #FEE715;
+      margin: 5px;
+    }
+  
+    .navbar-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .navbar-right button{
+      border-radius: 5px;
+    }
+  
+    /* Display MY PRODUCT link if user is logged in */
+    .navbar-item.my-product {
+      display: block; /* Ensure MY PRODUCT is visible */
+    }
+  
+    .navbar-menu.open {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-item {
+      font-size: 14px;
+    }
+  }
+  
+  

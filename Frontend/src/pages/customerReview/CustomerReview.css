@@ -1,0 +1,126 @@
+.customer-review-container {
+    width: 90vw; /* Full screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEE715;
+    margin: 0 0; /* Center on the page */
+    padding: 10px; /* Add some padding to avoid content touching edges */
+}
+
+.customer-review-header {
+    width: 80%;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: serif;
+    font-size: 2rem; /* Large text for headers */
+}
+
+.customer-review-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Adds space between cards */
+    justify-content: center; /* Aligns items centrally */
+    width: 100%; /* Ensures it scales properly */
+}
+
+.review-card {
+    width: 100%; /* Full width by default */
+    max-width: 400px; /* Limit card size on large screens */
+    margin: 1.5rem 0; /* Space between cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 8px 30px rgba(254, 231, 21, 0.5); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem;
+    border: 1px solid #FEE715;
+    background-color: #101820; /* Optional: Background color for better contrast */
+}
+
+.review-image {
+    width: 100%; /* Takes full width of card */
+    max-width: 350px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Matches container rounding */
+}
+
+.review-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits well */
+    border-radius: 8px;
+}
+
+.review-content {
+    width: 100%; /* Full width */
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.review-title {
+    font-size: 1.5rem; /* Large title */
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center-align titles */
+}
+
+.review-description {
+    font-size: 0.8rem; /* Normal text */
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center-align descriptions */
+}
+
+.review-button {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.review-button:hover {
+    background-color: #FEE715;
+    color: #101820;
+}
+
+.review-title a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+    cursor: default;
+}
+
+.review-title a:hover {
+    color: inherit;
+}
+
+/* Responsive Media Queries */
+
+/* Small Screens (max-width: 767px) */
+@media (max-width: 767px) {
+    .customer-review-container {
+        width: 100vw; /* Full width on mobile */
+        padding: 10px; /* Add padding */
+    }
+
+    .customer-review-header {
+        font-size: 1.5rem; /* Smaller header font for mobile */
+    }
+
+    .review-card {
+        width: 100%; /* Full width for each card on small screens */
+        margin: 1rem 0; /* Reduced margin */
+    }
+
+    .review-title {
+        font-size: 1.2rem; /* Smaller title for mobile */
+    }
+
+    .review-description {
+        font-size: 0.75rem; /* Smaller description text */
+    }
+}
+
